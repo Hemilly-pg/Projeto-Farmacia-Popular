@@ -6,31 +6,25 @@
     <title>Cadastro</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-     <div class="card-conteiner">
+    <div class="card-conteiner">
         <div class="card">
 
-            <div class="card-logo" id="logo">
-                
-            </div>
-    
+            <div class="card-logo" id="logo"></div>
+
             <div class="card-header">
                 <h1>Cadastro</h1>  
                 <div>Preencha as informações <br> abaixo para o cadastro</div>
             </div>
 
-            <form class="card-form">   
-
-                 <div class="logue-com-google">
-                    <button type="button"><img src="../images/LogoGoogle.png" alt=""> Sign in With Google</button>
+            <form class="card-form" id="cadastro-form" action="">
+                <div class="logue-com-google">
+                    <button type="button" id="google-cadastro"><img src="../images/LogoGoogle.png" alt=""> Sign in With Google</button>
                 </div>
 
                 <div style="font-size: 18pt;"> OU </div>
-                <div>
-                    <span class="material-icons">person</span>
-                    <input type="text" name="nome" id="nome" placeholder="Nome Completo" required>
-                </div>
                 <div>
                     <span class="material-icons">email</span>
                     <input type="text" name="email" id="email" placeholder="Example@example.com" required>
@@ -39,20 +33,17 @@
                     <span class="material-icons">lock</span>
                     <input type="password" name="senha" id="senha" placeholder="Senha" required>
                 </div>
-                 <div>
-                    <span class="material-icons">lock</span>
-                    <input type="password" name="confirm-senha" id="confirm-senha" placeholder="Repita a senha" required>
-                </div>
-
                 <div class="checkbox-container">
-                    <span for="check"><input type="checkbox" name="lembre_de_mim" id="check"  required>
-                        Concordo com os <a href="...">  Termos de Uso</a></span>
+                    <span><input type="checkbox" name="lembre_de_mim" id="check" required> Concordo com os <a href="./Temos-de-uso/index.html">Termos de Uso</a></span>
                 </div>
-                <input type="submit" name="cadastro" id="cadastro" class="form-button">
+                <input type="submit" name="cadastro" id="cadastro" class="form-button" value="Cadastrar">
             </form>
-            </div>
-        <div>  
+        </div>
     </div>
-    
+
+    <!-- Firebase e script externo -->
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recuperação de Senha</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="card-conteiner">
+      <div class="card">
+        <header>
+          <a class="back-button" onclick="voltar()" href="../Login/index.html">
+            <span class="material-icons">arrow_back</span>
+            <span id="voltar">Voltar</span>
+          </a>
+        </header>
+        <form action="" class="card-form">
+          <div>
+            <h2>Recuperação de Senha</h2>
+          </div>
+          <div>
+            <p>
+              Infome os seu email cadastrado, <br />
+              um email para recuperação de senha.
+            </p>
+          </div>
+          <div class="form-itens">
+
+            <span class="material-icons">mail</span>
+            <input type="email"placeholder="email@example.com">
+          </div>
+          <div>
+            <input type="submit" placeholder="Enviar" id="enviar" class="form-button">
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="../lib/rediect.js"></script>
+  </body>
+</html>

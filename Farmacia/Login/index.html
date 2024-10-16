@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,22 +6,18 @@
     <title>Login</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
 </head>
 <body>
     <div class="card-conteiner">
         <div class="card">
+            <div class="card-logo" id="logo"></div>
 
-            <div class="card-logo" id="logo">
-                
-            </div>
-    
             <div class="card-header">
                 <h1>Login</h1>  
-                <div>logue para ter acesso ao sistema</div>
+                <div>Logue para ter acesso ao sistema</div>
             </div>
 
-            <form class="card-form">   
+            <form class="card-form" id="login-form">   
                 <div>
                     <span class="material-icons">person</span> 
                     <input type="text" placeholder="Usuario@example.com" id="user" required>
@@ -30,30 +25,33 @@
 
                 <div>
                     <span class="material-icons">lock</span> 
-                    <input type="password" placeholder="*********" id="lock " required>
+                    <input type="password" placeholder="*********" id="lock" required>
                 </div>
 
                 <div class="checkbox-container">
                     <span for="check"><input type="checkbox" name="lembre_de_mim" id="check">Lembre de mim</span>
-                    <a href="...">Esqueci a senha</a>
+                    <a href="../Recuperacao-senha/index.html">Esqueci a senha</a>
                 </div>
-                <div >
+                <div>
                     <input type="submit" value="Entrar" class="form-button">
                 </div> 
                 
                 <div class="form-cadastro">
-                    <span >Novo por aqui?</span>
+                    <span>Novo por aqui?</span>
                     <a href="../Cadastro/index.html">Cadastre-se</a>
                 </div>
 
-
-                         <div class="logue-com-google">
+                <div class="logue-com-google">
                     Logue com Google
-                    <button type="button"><img src="../images/LogoGoogle.png" alt=""> Sign in With Google</button>
+                    <button type="button" id="google-login"><img src="../images/LogoGoogle.png" alt=""> Sign in With Google</button>
                 </div>
             </form>
-            </div>
-        <div>  
+        </div>
     </div>
+
+    <!-- External JavaScript file -->
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js"></script>
+    <script src="../lib/login.js"></script>
 </body>
 </html>

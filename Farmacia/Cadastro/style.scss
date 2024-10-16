@@ -1,5 +1,8 @@
+
+
 * {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
   scrollbar-width: thin;
   color: #f3e9dc;
 }
@@ -28,11 +31,11 @@ body {
 .card::before {
   content: "";
   position: absolute;
-  background: #247ba0;
+  background: #144487;
   border: 1px #4d5079 transparent;
   border-radius: 10px;
   inset: 0;
-  transform: rotate(-4deg);
+  transform: rotate(-2deg);
   z-index: -1;
 }
 
