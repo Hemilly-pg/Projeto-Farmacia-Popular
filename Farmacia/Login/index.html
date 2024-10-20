@@ -1,57 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-</head>
-<body>
-    <div class="card-conteiner">
-        <div class="card">
-            <div class="card-logo" id="logo"></div>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <title>Página de Login</title>
+  </head>
+  <body>
+    <div class="conteiner" id="conteiner">
+      <div class="form-conteiner sign-up">
+        <form>
+          <h1>Criação de conta</h1>
+          <div class="social-icons">
+            <a href="#" class="icon"
+              ><i class="fa-brands fa-google-plus-g"></i
+            ></a>
+            <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="icon"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+          </div>
+          <span> ou use seu e-mail para registro</span>
+          <input type="text" placeholder="Nome"  required/>
+          <input type="email" placeholder="Email"  required/>
+          <input type="password" placeholder="Senha"  required/>
+          <div class="checkbox-container">
+            <span
+              ><input type="checkbox" name="Termos" id="check" required />
+              Concordo com os
+              <a href="../termos/index.html">Termos de Uso</a></span
+            >
+          </div>
+          <button>Cadastre-se</button>
+        </form>
+      </div>
 
-            <div class="card-header">
-                <h1>Login</h1>  
-                <div>Logue para ter acesso ao sistema</div>
-            </div>
-
-            <form class="card-form" id="login-form">   
-                <div>
-                    <span class="material-icons">person</span> 
-                    <input type="text" placeholder="Usuario@example.com" id="user" required>
-                </div>
-
-                <div>
-                    <span class="material-icons">lock</span> 
-                    <input type="password" placeholder="*********" id="lock" required>
-                </div>
-
-                <div class="checkbox-container">
-                    <span for="check"><input type="checkbox" name="lembre_de_mim" id="check">Lembre de mim</span>
-                    <a href="../Recuperacao-senha/index.html">Esqueci a senha</a>
-                </div>
-                <div>
-                    <input type="submit" value="Entrar" class="form-button">
-                </div> 
-                
-                <div class="form-cadastro">
-                    <span>Novo por aqui?</span>
-                    <a href="../Cadastro/index.html">Cadastre-se</a>
-                </div>
-
-                <div class="logue-com-google">
-                    Logue com Google
-                    <button type="button" id="google-login"><img src="../images/LogoGoogle.png" alt=""> Sign in With Google</button>
-                </div>
-            </form>
+      <div class="form-conteiner sign-in">
+        <form>
+          <h1>Login</h1>
+          <div class="social-icons">
+            <a href="#" class="icon"
+              ><i class="fa-brands fa-google-plus-g"></i
+            ></a>
+            <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="icon"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+          </div>
+          <span> ou use seu e-mail e senha</span>
+          <input type="email" placeholder="Email" required/>
+          <input type="password" placeholder="Senha" required/><a
+            href="../Recuperacao-senha/index.html"
+            >Esqueceu a senha?</a
+          >
+          <button>Logar</button>
+        </form>
+      </div>
+      <div class="toggle-conteiner">
+        <div class="toggle">
+          <div class="toggle-panel toggle-left">
+            <h1>
+              <img src="../images/LogoEmpresa.png" />
+              <div>Farmácia Municipal</div>
+              Olá Amigo
+            </h1>
+            <p>
+              Registre-se com seus dados pessoais para usar todos os recursos do
+              site
+            </p>
+            <button class="hidden" id="login">Fazer Login</button>
+          </div>
+          <div class="toggle-panel toggle-right">
+            <h1>
+              <img src="../images/LogoEmpresa.png" />
+              <div>Farmácia Municipal</div>
+              Bem-Vindo de Volta
+            </h1>
+            <p>
+              Insira seus dados pessoais para usar todos os recursos do site
+            </p>
+            <button class="hidden" id="register">Cadastre-se</button>
+          </div>
         </div>
+      </div>
     </div>
 
-    <!-- External JavaScript file -->
-    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js"></script>
-    <script src="../lib/login.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
