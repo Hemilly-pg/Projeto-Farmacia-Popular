@@ -12,11 +12,24 @@
 <body>
   <div class="card">
     <nav class="card-nav">
-      <img class="logo" src="../images/LogoEmpresa.png" alt="" />
-      <input type="button" class="nav-button" value="Inicio" />
-      <input type="button" class="nav-button" value="Login" />
-      <input type="button" class="nav-button" value="Pedidos" />
-      <span class="material-icons icon-person">person</span>
+      <img class="logo" src="../images/LogoEmpresa.png" alt="Logo Empresa" />
+      
+      <div class="search-container">
+        <input type="text" class="search-bar" placeholder="O que você está buscando?">
+        <button class="search-button">
+          <i class="material-icons">search</i>
+        </button>
+      </div>
+      
+      <button class="nav-button pedido">
+        <img src="../images/pedido.png" alt="Pedido" />
+        Acompanhar<br>pedidos
+      </button>
+      
+      <button class="nav-button perfil">
+        <i class="material-icons">account_circle</i>
+        Boas-vindas!<br>Entrar ou cadastrar
+      </button>
     </nav>
 
     <div class="card-header"></div>
@@ -28,12 +41,12 @@
     </div>
   </div>
 
-  <div class="card-conteiner-tittle">
+  <!--<div class="card-conteiner-tittle">
     <p>Medicamentos</p>
-  </div>
+  </div>-->
 
-  
-  <div  class="remedios-classificacao">
+
+  <div class="remedios-classificacao">
     <input type="button" value="Anti-inflamatórios" />
     <input type="button" value="Analgésicos" />
     <input type="button" value="Antibióticos" />
@@ -42,94 +55,98 @@
     <input type="button" value="Antialérgicos" />
     <input type="button" value="Antipiréticos" />
     <input type="button" value="Antidepressivos" />
-    
+
     <input type="button" value="Outros" />
   </div>
 
-  <div class="card-conteiner">
-    <div>
-      <img src="../images/remedio1.png" alt="" />
-      <h2>CAPTROIL 25 mg</h2>
+<div class="card-conteiner">
+    <div class="medicamento">
+      <img src="../images/remedio1.png" alt="CAPTROIL 25 mg" />
+      <h3>CAPTROIL 25 mg</h3>
     </div>
-    <div>
-      <img src="../images/remedio2.png" alt="" />
-      <h2>DIPIRONA 25 mg | ml</h2>
+    <div class="medicamento">
+      <img src="../images/remedio2.png" alt="DIPIRONA 25 mg | ml" />
+      <h3>DIPIRONA 25 mg | ml</h3>
     </div>
-    <div>
-      <img src="../images/remedio3.png" alt="" />
-      <h2>LOROTADINA 1 mg | ml</h2>
+    <div class="medicamento">
+      <img src="../images/remedio3.png" alt="LOROTADINA 1 mg | ml" />
+      <h3>LOROTADINA 1 mg | ml</h3>
     </div>
-    <div>
-      <img src="../images/nervocalm.png" alt="" />
-      <h2>NERVOCALM 250 mg</h2>
+    <div class="medicamento">
+      <img src="../images/nervocalm.png" alt="NERVOCALM 250 mg" />
+      <h3>NERVOCALM 250 mg</h3>
     </div>
-    <div>
-      <img src="../images/refesgripe.png" alt="" />
-      <h2>REFESGRIPE</h2>
+    <div class="medicamento">
+      <img src="../images/refesgripe.png" alt="REFESGRIPE" />
+      <h3>REFESGRIPE</h3>
     </div>
-    <div>
-      <img src="../images/seakalm.png" alt="" />
-      <h2>SEAKALM 600 mg</h2>
+    <div class="medicamento">
+      <img src="../images/seakalm.png" alt="SEAKALM 600 mg" />
+      <h3>SEAKALM 600 mg</h3>
     </div>
-    <div>
-      <img src="../images/azicox-2.jpg" alt="">
-      <h2>AZICOX-2</h2>
+    <div class="medicamento">
+      <img src="../images/azicox-2.jpg" alt="AZICOX-2" />
+      <h3>AZICOX-2</h3>
     </div>
-    <div>
-      <img src="../images/biofloxacin.png" alt="">
-      <h2>BIOFLOXACIN</h2>
+    <div class="medicamento">
+      <img src="../images/biofloxacin.png" alt="BIOFLOXACIN" />
+      <h3>BIOFLOXACIN</h3>
     </div>
-    <div>
-      <img src="../images/calman.png" alt="">
-      <h2>CALMAN</h2>
+    <div class="medicamento">
+      <img src="../images/calman.png" alt="CALMAN" />
+      <h3>CALMAN</h3>
     </div>
-    <div>
-      <img src="../images/celesporin.png" alt="">
-      <h2>CELESPORIN</h2>
+    <div class="medicamento">
+      <img src="../images/celesporin.png" alt="CELESPORIN" />
+      <h3>CELESPORIN</h3>
     </div>
-    <div>
-      <img src="../images/clonazepam.jpg" alt="">
-      <h2>CLONAZEPAM</h2>
+    <div class="medicamento">
+      <img src="../images/clonazepam.jpg" alt="CLONAZEPAM" />
+      <h3>CLONAZEPAM</h3>
     </div>
-    <div>
-      <img src="../images/doxitec.png" alt="">
-      <h2>DOXITEC</h2>
+    <div class="medicamento">
+      <img src="../images/doxitec.png" alt="DOXITEC" />
+      <h3>DOXITEC</h3>
     </div>
-    <div>
-      <img src="../images/neodexaFcreme.png" alt="">
-      <h2>NEODEXA F CREME</h2>
+    <div class="medicamento">
+      <img src="../images/neodexaFcreme.png" alt="NEODEXA F CREME" />
+      <h3>NEODEXA F CREME</h3>
     </div>
-    <div>
-      <img src="../images/torsilax.png" alt="">
-      <h2>TORSILAX</h2>
+    <div class="medicamento">
+      <img src="../images/torsilax.png" alt="TORSILAX" />
+      <h3>TORSILAX</h3>
     </div>
-    <div>
-      <img src="../images/amoxicilina.png" alt="">
-      <h2>AMOXICILINA</h2>
+    <div class="medicamento">
+      <img src="../images/amoxicilina.png" alt="AMOXICILINA" />
+      <h3>AMOXICILINA</h3>
     </div>
-    <div>
-      <img src="../images/ibuprofeno.png" alt="">
-      <h2>IBUPROFENO</h2>
+    <div class="medicamento">
+      <img src="../images/ibuprofeno.png" alt="IBUPROFENO" />
+      <h3>IBUPROFENO</h3>
     </div>
-    <div>
-      <img src="../images/simeticona.png" alt="">
-      <h2>SIMETICONA</h2>
+    <div class="medicamento">
+      <img src="../images/simeticona.png" alt="SIMETICONA" />
+      <h3>SIMETICONA</h3>
     </div>
-    <div>
-      <img src="../images/paracetamol.png" alt="">
-      <h2>PARACETAMOL</h2>
+    <div class="medicamento">
+      <img src="../images/paracetamol.png" alt="PARACETAMOL" />
+      <h3>PARACETAMOL</h3>
     </div>
-    <div>
-      <img src="../images/omeprazol.png" alt="">
-      <h2>OMEPRAZOL</h2>
+    <div class="medicamento">
+      <img src="../images/omeprazol.webp" alt="OMEPRAZOL" />
+      <h3>OMEPRAZOL</h3>
     </div>
-    <div>
-      <img src="../images/lozartana.png" alt="">
-      <h2>LOZARTANA</h2>
+    <div class="medicamento">
+      <img src="../images/lozartana.png" alt="LOZARTANA" />
+      <h3>LOZARTANA</h3>
     </div>
   </div>
 
-  <h2 class="card-conteiner-tittle">Contato</h2>
+<div class="contact-section">
+  <p class="contact-text">
+    <h1>Entre em Contato</h1>
+    Tem dúvidas ou sugestões? Estamos aqui para ajudar! Preencha o formulário abaixo e entraremos em contato o mais rápido possível.
+  </p>
   <form class="contact-form">
     <div class="form-group">
       <label for="name">Nome</label>
@@ -147,8 +164,10 @@
       <label for="message">Mensagem</label>
       <textarea id="message" name="message" rows="5" required></textarea>
     </div>
-    <button type="submit">Enviar</button>
+    <button type="submit" class="contact-submit">Enviar</button>
   </form>
+</div>
+
 
   <footer>
     <div class="footer_conteiner">
